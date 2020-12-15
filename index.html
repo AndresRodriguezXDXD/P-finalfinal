@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/tooplate-style.css">
+
+	<script>
+		var renderPage = true;
+
+	if(navigator.userAgent.indexOf('MSIE')!==-1
+		|| navigator.appVersion.indexOf('Trident/') > 0){
+   	
+   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+   		renderPage = false;
+	}
+	</script>
+</head>
+
+<body>
+	
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	
+	
+	<div class="container-fluid tm-main">
+		<div class="row tm-main-row">
+
+			
+			<div id="tmSideBar" class="sidebar">
+
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								
+							</li>
+							<li>
+								
+							</li>							
+							<li>
+								
+							</li>
+							<li>
+								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
+									<i class="fas fa-comments tm-nav-fa-icon"></i>
+									<span>CODIGO</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+
+					
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">Proyecto final</h1></header>
+							<p class="mb-5 tm-font-big">En la pestaña Codigo se puede ver la funcionalidad y la sintaxis del lenguaje</p>
+							
+							
+						</div>
+					</section>
+
+					
+					<section id="tm-section-4" class="tm-section">
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row mb-4">
+								<div class="col-sm-12">
+									
+					<div class="col-md-20 col-sm-30 tm-contact-col">
+										<div class="tm-address-box">
+											<p>
+											En el cuadro de texto se puede ver un ejemplo del codigo y bajo el la sintaxis del lenguaje de forma mas detallada.
+											</p>
+											<p>
+
+											</p>
+											
+										</div>
+									</div>
+									
+									<header><h2 class="tm-text-shadow">Codigo</h2></header>
+								</div>
+							</div>
+							<div class="row tm-page-4-content">
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+									<div class="contact_message">
+										<form class="contact-form">
+											
+											<div class="form-group">
+												
+											</div>
+											<div class="form-group">
+												
+											</div>
+											<div class="form-group">
+												<textarea id="contact_message" name="contact_message" class="form-control"  rows="15" placeholder="Ingrese el codigo" required></textarea>
+											</div>
+											<button id="validar" type="submit" class="btn tm-btn-submit tm-btn ml-auto">Validar</button>
+										</form>
+									</div>
+								</div>
+								
+								<div class="col-md-20 col-sm-30 tm-contact-col">
+									<header><h2 class="tm-text-shadow">Sintaxis</h2></header>
+									<div class="tm-address-box">
+										<p>Declarar variable : Cosa
+
+										</p>
+										<p> Ciclo While : guail
+
+										</p>
+										<p> Do While : do
+
+										</p>
+										<p> Ciclo For : Puespor:  i:=0  hasta_que i "Simbolo menor que" 10 y_cambias i++ 
+
+										</p>
+										<p>if : Ysi
+
+										</p>
+										<p>ifno : Ysino
+
+										</p>
+										<p>inizializar: iwal
+
+										</p>
+										<p>AL FINAL SIEMPRE PONER UN ":" ejemplo Ysi:
+
+										</p>
+										<p>Funcion: junsion "Nombre de la Funcion"
+
+										</p>	
+										
+										<p>
+
+										</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>					
+				</div>								
+				<footer class="footer-link">
+					
+				</footer>
+			</div>				
+		</div>
+		<div id="preload-01"></div>
+		<div id="preload-02"></div>
+		<div id="preload-03"></div>
+		<div id="preload-04"></div>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="js/parser.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script>
+
+		var sidebarVisible = false;
+		var currentPageID = "#tm-section-1";
+
+	
+		function setupCarousel() {
+
+			
+			if($('#tm-section-2').css('display') == "none") {
+			}
+			else {
+
+				var slider = $('.tm-img-slider');
+				var windowWidth = $(window).width();
+
+				if (slider.hasClass('slick-initialized')) {
+					slider.slick('destroy');
+				}
+
+				if(windowWidth < 640) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 1,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else if(windowWidth < 992) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 2,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else {
+					// Slick carousel
+	              	slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 3,
+	              		slidesToScroll: 2
+	              	});
+				}
+
+			
+				$('.tm-img-slider').magnificPopup({
+				  delegate: 'a',
+				  type: 'image',
+				  gallery: {enabled:true}
+				
+				});
+      		}
+  		}
+
+  		// Setup Nav
+  		function setupNav() {
+  			
+	     	$(".tm-main-nav a").click(function(e){
+	     		e.preventDefault();
+		    	
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+		    	
+		    	setupCarousel();
+		    	setupFooter();
+
+		    
+		    	$("#tmSideBar").removeClass("show");
+		    });	    
+  		}
+
+  		function changePage(currentNavItem) {
+  			
+  			$(".tm-main-nav a").removeClass("active");
+     		currentNavItem.addClass("active");
+
+	    	$(currentPageID).hide();
+
+	    	
+	    	currentPageID = currentNavItem.data("page");
+	    	$(currentPageID).fadeIn(1000);
+
+	    	
+	    	var bgImg = currentNavItem.data("bgImg");
+	    	$.backstretch("img/" + bgImg);		    	
+  		}
+
+  		
+  		function setupNavToggle() {
+
+			$("#tmMainNavToggle").on("click", function(){
+				$(".sidebar").toggleClass("show");
+			});
+  		}
+
+  	
+  		function setupFooter() {
+  			
+  			var padding = 100;
+  			var footerPadding = 40;
+  			var mainContent = $("section"+currentPageID);
+  			var mainContentHeight = mainContent.outerHeight(true);
+  			var footer = $(".footer-link");
+  			var footerHeight = footer.outerHeight(true);
+  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
+  			var windowHeight = $(window).height();		
+
+  			if(totalPageHeight > windowHeight){
+  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
+  				footer.css("bottom", footerHeight + "px");  			
+  			}
+  			else {
+  				$(".tm-content").css("margin-bottom", "0");
+  				footer.css("bottom", "20px");  				
+  			}  			
+  		}
+
+  		
+      	$(window).on("load", function(){
+
+      		
+      		if(renderPage) {
+			
+		      	$('body').addClass('loaded');
+
+		     
+		      	var allPages = $(".tm-section");
+
+		      	
+		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+			    
+			    if(linkToAnotherPage != null) {
+			    	
+			    	linkToAnotherPage.on("click", function(){
+			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		$("a" + navItemToHighlight).click();
+			    	});
+			    }
+		      	
+		      
+		      	allPages.hide();
+
+		      	$("#tm-section-1").fadeIn();
+
+		     	
+		     	var bgImg = $("#tmNavLink1").data("bgImg");
+		     	
+		     	$.backstretch("img/" + bgImg, {fade: 500});
+
+		     
+			    setupCarousel();
+			    setupNav();
+			    setupNavToggle();
+			    setupFooter();
+
+			   
+			    $(window).resize(function() {
+			    	setupCarousel();
+			    	setupFooter();
+			    });
+      		}	      	
+		});
+
+		</script>
+	</body>
+</html>
